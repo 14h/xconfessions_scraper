@@ -1,0 +1,25 @@
+{
+  "name": "service-bootstrap",
+  "description": "This is a bootstrap for a node service",
+  "scripts": {
+    "start": "yarn run build && node build/src/index.js",
+    "build": "tsc",
+    "watch": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts | bunyan"
+  },
+  "author": "Styla GmbH",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/styladev/service-bootstrap.git"
+  },
+  "dependencies": {
+    "@types/node-fetch": "^2.5.7",
+    "bunyan": "^1.8.12",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^1.19.2",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  }
+}

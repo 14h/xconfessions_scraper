@@ -1,0 +1,9 @@
+node_modules
+build
+npm-debug.log
+*.sublime-*
+*.iml
+.DS_Store
+package-lock.json
+.vscode
+.idea
